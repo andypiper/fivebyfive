@@ -2,4 +2,4 @@
 
 MicroPython code for a 01Space 5x5 Neopixel board (ESP32-C3 with USB-C)
 
-![01Space board](board-leds.jpeg)
+![01Space board](board-neopixels.jpeg)
