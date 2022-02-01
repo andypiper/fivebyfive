@@ -22,3 +22,21 @@ USB JTAG/serial debug unit:
 
 **VID** - 303a - Espressif  
 **PID** - 1001 - USB JTAG/serial debug / ESP32-C3 
+
+
+### Manufacturer: 
+
+- https://github.com/01Space/ESP32-C3FH4-RGB
+- https://www.youtube.com/watch?v=m-cgaS6eHv4
+
+```
+ESP32-C3FH4, 2.4GHz Wi-Fi and supporting long-distance Bluetooth 5 
+built-in 400 KB SRAM and 4 MB Flash
+USB Type-C,USB OnThe-Go
+Including 2 channels of 5V -3.3V DC / DC
+Integrated 5X5 ws2812b-1515 and 2 buttons 
+3V power LED and status LED
+Ceramic Antenna
+Size: 21 x 18 mm
+Weight: 2.3g
+```
