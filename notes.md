@@ -40,3 +40,6 @@ Ceramic Antenna
 Size: 21 x 18 mm
 Weight: 2.3g
 ```
+
+
+- https://www.cnx-software.com/2022/01/07/board-with-25-rgb-leds-is-offered-with-esp32-c3-or-esp32-pico-d4/
