@@ -27,6 +27,10 @@ USB JTAG/serial debug unit:
 ### Manufacturer: 
 
 - https://github.com/01Space/ESP32-C3FH4-RGB
+ - works fine using the ESP32 Arduino core v2.0.2 / ESP32C3 Dev Module board in Arduino IDE 2.0
+ - code has NeoPixel on pin 8, 800 KHz with GRBW
+
+
 - https://www.youtube.com/watch?v=m-cgaS6eHv4
 
 ```
