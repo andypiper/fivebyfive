@@ -38,14 +38,17 @@
 # https://twitter.com/GeekMomProjects/status/1483695065629224960
 
 import esp32
-esp32.RMT.bitstream_channel(None) # does not work without this
+#esp32.RMT.bitstream_channel(None) # does not work without this
+esp32.RMT.bitstream_channel(0) # this board needs this
 
 from machine import Pin
 from neopixel import NeoPixel
+import time
 
 pin = Pin(8, Pin.OUT) # NP control on Pin 8
+pixels = 25 # we have 25 pixels, set here to use for loops
 
-np = NeoPixel(pin,25) # we have 25 pixels!
+np = NeoPixel(pin,pixels) 
 
 # np[0] = (0,255,0) # top left green
 # np.write()
@@ -62,6 +65,14 @@ np = NeoPixel(pin,25) # we have 25 pixels!
 
 # print(machine.unique_id()) # output board ID
 
+def test_all():
+    for x in range(pixels):
+        np[x] = (50,0,0)
+        np.write()
+        time.sleep(0.3)
+        np[x] = (0,0,0)
+        np.write()
+        time.sleep(0.3)
 
 def clear():
     np.fill((0,0,0))
@@ -72,6 +83,7 @@ def smile():
     for x in lights:
         np[x] = (15,15,0) # pale yellow smiley
     np.write()
-    
+
+test_all()
 smile()
 
