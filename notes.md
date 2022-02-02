@@ -23,6 +23,7 @@ USB JTAG/serial debug unit:
 **VID** - 303a - Espressif
 **PID** - 1001 - USB JTAG/serial debug / ESP32-C3
 
+Noting that this is not in the [Espressif allocated list of PIDs](https://github.com/espressif/usb-pids/blob/main/allocated-pids.txt)
 
 ### Manufacturer:
 
