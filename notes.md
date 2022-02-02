@@ -54,3 +54,18 @@ Weight: 2.3g
 
 
 Yet to test the pins or the mystery (possibly Grove-compatible?) 4-pin connector on the board.
+
+
+### CircuitPython
+
+Look into this - similar board
+https://circuitpython.org/board/ai_thinker_esp32-c3s/
+
+
+
+### Ideas
+
+- CheerPixel!
+- try the Wordle thing https://twitter.com/ciro/status/1488259161066459142
+- GitHub contributions
+- ...
