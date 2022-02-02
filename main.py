@@ -28,7 +28,7 @@ np = NeoPixel(pin, pixels)
 # print(machine.unique_id()) # output board ID
 
 def rand_rgb():
-    """Return a randomised RGB tuple with max values of 50 to limit brightness"""
+    # Return a randomised RGB tuple with max values of 50 to limit brightness
     r = random.randint(0,50)
     g = random.randint(0,50)
     b = random.randint(0,50)
@@ -36,7 +36,7 @@ def rand_rgb():
 
 
 def test_all():
-    """Iterate through all Neopixels and switch them on and off in sequence"""
+    # Iterate through all Neopixels and switch them on and off in sequence
     for x in range(pixels):
         np[x] = (rand_rgb())
         np.write()
@@ -49,13 +49,13 @@ def test_all():
 
 
 def clear():
-    """Reset all Neopixels to black / off"""
+    # Reset all Neopixels to black / off
     np.fill((0, 0, 0))
     np.write()
 
 
 def smile():
-    """Light the pixels into a smiley face"""
+    # Light the pixels into a smiley face
     lights = [1, 3, 10, 14, 16, 18, 22]
     for x in lights:
         np[x] = (15, 15, 0)  # pale yellow smiley
