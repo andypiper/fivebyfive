@@ -61,10 +61,11 @@ Yet to test the pins or the mystery (possibly Grove-compatible?) 4-pin connector
 Look into this - similar board
 https://circuitpython.org/board/ai_thinker_esp32-c3s/
 
-
+NB the CP docs list a C3 DevKit for module compat, but no download - ask on Discord
 
 ### Ideas
 
+- play with rshell (https://core-electronics.com.au/tutorials/getting-started-with-raspberry-pi-pico.html)
 - CheerPixel!
 - try the Wordle thing https://twitter.com/ciro/status/1488259161066459142
 - GitHub contributions
