@@ -1,6 +1,5 @@
 ### Board on macOS
 
-
 - location varies -> `/dev/tty.usbmodem21301` on my M1 Pro
 
 ```text
@@ -50,10 +49,20 @@ Weight: 2.3g
 - https://www.cnx-software.com/2022/01/07/board-with-25-rgb-leds-is-offered-with-esp32-c3-or-esp32-pico-d4/
 
 
+### MicroPython
+
+Flash:
+
+```shell
+$ esptool.py --chip esp32c3 --port /dev/tty.usbmodem523201 erase_flash
+$ esptool.py --chip esp32c3 --port /dev/ttyUSB0 --baud 460800 write_flash -z 0x0 esp32c3-20220117-v1.18.bin
+```
+
 - https://github.com/micropython/micropython/issues/8109
 
+Works fully from the `v1.18-68-g1f04a9a1f` nightly.
 
-Yet to test the pins or the mystery (possibly Grove-compatible?) 4-pin connector on the board.
+Yet to test the pins or the mystery (possibly Qwiic or Grove-compatible?) 4-pin connector on the board.
 
 
 ### CircuitPython
@@ -66,7 +75,7 @@ NB the CP docs list a C3 DevKit for module compat, but no download - ask on Disc
 ### Ideas
 
 - play with rshell (https://core-electronics.com.au/tutorials/getting-started-with-raspberry-pi-pico.html)
-- CheerPixel!
+- CheerPixel! (CheerDot? CheerSpot?)
 - try the Wordle thing https://twitter.com/ciro/status/1488259161066459142
-- GitHub contributions
+- GitHub contributions?
 - ...
