@@ -15,4 +15,7 @@ It all started with [this Tweet from @GeekMomProjects](https://twitter.com/GeekM
 - board from [here](https://banggood.com/ESP32-C3-Development-Board-RISC-V-WiFi-Bluetooth-IoT-Development-Board-Compatible-with-Python-p-1914005.html)
 - MicroPython build from [here](https://micropython.org/download/esp32c3-usb/)
 
-More information / learnings in the [notes](notes.md)
+## More information
+
+- learnings in the [notes](notes.md)
+- [blog post](https://dev.to/andypiper/bringing-the-bling-with-micropython-hn1) with background
