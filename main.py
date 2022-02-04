@@ -17,8 +17,8 @@ pixels = 25  # we have 25 pixels, set as a constant here to use for loops
 np = NeoPixel(neopin, pixels)
 
 # setup the button and the status LED
-button = Pin(9, machine.Pin.IN)
-status_led = Pin(10, machine.Pin.OUT)
+button = Pin(9, Pin.IN)
+status_led = Pin(10, Pin.OUT)
 
 # scratchpad code testing
 
