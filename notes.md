@@ -17,23 +17,23 @@ USB JTAG/serial debug unit:
   Extra Operating Current (mA):	0
 ```
 
-**USB ID**	1001:303a
-
+**USB ID** - 1001:303a
 **VID** - 303a - Espressif
 **PID** - 1001 - USB JTAG/serial debug / ESP32-C3
 
 Noting that this is not in the [Espressif allocated list of PIDs](https://github.com/espressif/usb-pids/blob/main/allocated-pids.txt)
 
-### Manufacturer:
+### Manufacturer
 
-- https://github.com/01Space/ESP32-C3FH4-RGB
+- [Arduino sketch](https://github.com/01Space/ESP32-C3FH4-RGB)
   - works fine using the ESP32 Arduino core v2.0.2 / ESP32C3 Dev Module board in Arduino IDE 2.0
   - code has NeoPixel on pin 8, 800 KHz with GRBW
 
+- [Video demo](https://www.youtube.com/watch?v=m-cgaS6eHv4)
 
-- https://www.youtube.com/watch?v=m-cgaS6eHv4
+From the video notes:
 
-```
+```text
 ESP32-C3FH4, 2.4GHz Wi-Fi and supporting long-distance Bluetooth 5
 built-in 400 KB SRAM and 4 MB Flash
 USB Type-C,USB OnThe-Go
@@ -45,43 +45,41 @@ Size: 21 x 18 mm
 Weight: 2.3g
 ```
 
-
-- https://www.cnx-software.com/2022/01/07/board-with-25-rgb-leds-is-offered-with-esp32-c3-or-esp32-pico-d4/
-
+- [CNX News item](https://www.cnx-software.com/2022/01/07/board-with-25-rgb-leds-is-offered-with-esp32-c3-or-esp32-pico-d4/)
 
 ### MicroPython
 
-Flash:
+Flash to board:
 
 ```shell
 $ esptool.py --chip esp32c3 --port /dev/tty.usbmodem523201 erase_flash
 $ esptool.py --chip esp32c3 --port /dev/ttyUSB0 --baud 460800 write_flash -z 0x0 esp32c3-20220117-v1.18.bin
 ```
 
-- https://github.com/micropython/micropython/issues/8109
+- [NeoPixel RMT issue](https://github.com/micropython/micropython/issues/8109)
 
-Works fully from the `v1.18-68-g1f04a9a1f` nightly.
+Now works fully (from the `v1.18-68-g1f04a9a1f` nightly).
 
-Yet to test the pins or the mystery (possibly Qwiic or Grove-compatible?) 4-pin connector on the board.
-
+Yet to test the GPIO pins or the mystery (possibly Qwiic or Grove-compatible?) 4-pin connector on the board.
 
 ### CircuitPython
 
-Look into this - similar board
-https://circuitpython.org/board/ai_thinker_esp32-c3s/
+Look into this - [similar board](https://circuitpython.org/board/ai_thinker_esp32-c3s/)
 
 NB the CP docs list a C3 DevKit for module compat, but no download - ask on Discord
 
-### Ideas
-
-- play with rshell (https://core-electronics.com.au/tutorials/getting-started-with-raspberry-pi-pico.html)
-- CheerPixel! (CheerDot? CheerSpot?)
-- try the Wordle thing https://twitter.com/ciro/status/1488259161066459142
-- GitHub contributions?
-- ...
-
-
-### Reference
+### Reference card
 
 ![Annotated board](/reference/ESP32-C3FH4-RGB-reference.jpeg)
 
+### Ideas / TODO
+
+- build out more tests and effects for the basic code
+- play with [rshell](https://core-electronics.com.au/tutorials/getting-started-with-raspberry-pi-pico.html)
+- ampy
+- CheerPixel! (CheerDot? CheerSpot?)
+- try the [Wordle thing](https://twitter.com/ciro/status/1488259161066459142)
+- GitHub contributions?
+- try out Qwiic connections
+- on-board web server for drawing / updating designs
+- ...
