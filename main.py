@@ -16,7 +16,7 @@ import time
 esp32.RMT.bitstream_channel(0)       # board needs this for NeoPixels to work
 
 neopin = Pin(8, Pin.OUT)  # NeoPixel control on Pin 8
-pixels = 25  # we have 25 pixels, set as a constant here to use for loops
+pixels = 25               # we have 25 pixels, set as a constant here for loops
 
 np = NeoPixel(neopin, pixels)
 
@@ -40,7 +40,7 @@ status_led = Pin(10, Pin.OUT)
 
 
 def rand_rgb():
-    # Return a randomised RGB tuple with max values of 50 to limit brightness
+    # Return a randomised RGB tuple, max values of 50 to limit brightness
     r = random.randint(0,50)
     g = random.randint(0,50)
     b = random.randint(0,50)
