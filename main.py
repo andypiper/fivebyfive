@@ -6,13 +6,19 @@ from neopixel import NeoPixel
 import random
 import time
 
-# esp32.RMT.bitstream_channel(None) # does not work without this
+
+# setup the NeoPixels
+# esp32.RMT.bitstream_channel(None) # does not work with this
 esp32.RMT.bitstream_channel(0)  # 01Space board needs this
 
-pin = Pin(8, Pin.OUT)  # NP control on Pin 8
-pixels = 25  # we have 25 pixels, set here to use for loops
+neopin = Pin(8, Pin.OUT)  # NeoPixel control on Pin 8
+pixels = 25  # we have 25 pixels, set as a constant here to use for loops
 
-np = NeoPixel(pin, pixels)
+np = NeoPixel(neopin, pixels)
+
+# setup the button and the status LED
+button = Pin(9, machine.Pin.IN)
+status_led = Pin(10, machine.Pin.OUT)
 
 # scratchpad code testing
 
@@ -27,6 +33,7 @@ np = NeoPixel(pin, pixels)
 
 # print(machine.unique_id()) # output board ID
 
+
 def rand_rgb():
     # Return a randomised RGB tuple with max values of 50 to limit brightness
     r = random.randint(0,50)
@@ -36,7 +43,9 @@ def rand_rgb():
 
 
 def test_all():
-    # Iterate through all Neopixels and switch them on and off in sequence
+    # Iterate through all Neopixels and switch them on and off
+    # with random colours in sequence
+    # Also output the chip internal temperature in centigrade
     for x in range(pixels):
         np[x] = (rand_rgb())
         np.write()
@@ -45,7 +54,8 @@ def test_all():
         np[x] = (0, 0, 0)
         np.write()
         time.sleep(0.3)
-    print("Test completed.")
+    print("NeoPixels Test completed.")
+    # print("ESP32 temp measures: " + str((esp32.raw_temperature()-32)/1.8) + " degrees C")
 
 
 def clear():
@@ -63,5 +73,15 @@ def smile():
     print(":-)")
 
 
+def heart():
+    # Light the pixels into a heart shape
+    lights = [1, 3, 5, 6, 8, 9, 11, 12, 13, 17, 22]
+    for x in lights:
+        np[x] = (50, 0, 0)  # red heart (TODO: customisable colour)
+    np.write()
+    print("<3")
+
+
+# run the functions
 test_all()
 smile()
