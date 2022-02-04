@@ -64,7 +64,7 @@ def clear_wipe():
     lights = [5, 6, 7, 8, 9]
     for x in lights:
         np[x] = (0, 0, 0)
-        np.write()    
+        np.write()
     time.sleep(0.2)
     lights = [10, 11, 12, 13, 14]
     for x in lights:
@@ -81,7 +81,7 @@ def clear_wipe():
         np[x] = (0, 0, 0)
         np.write()
     time.sleep(0.2)
-        
+
 
 def test_all_np():
     # Iterate through all Neopixels and blink
