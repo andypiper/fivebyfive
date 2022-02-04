@@ -13,10 +13,10 @@ import time
 # setup the NeoPixels
 
 # esp32.RMT.bitstream_channel(None)  # does *not* work with this board
-esp32.RMT.bitstream_channel(0)       # board needs this for NeoPixels to work
+esp32.RMT.bitstream_channel(0)  # board needs this for NeoPixels to work
 
 neopin = Pin(8, Pin.OUT)  # NeoPixel control on Pin 8
-pixels = 25               # we have 25 pixels, set as a constant here for loops
+pixels = 25  # we have 25 pixels, set as a constant here for loops
 
 np = NeoPixel(neopin, pixels)
 
@@ -41,9 +41,9 @@ status_led = Pin(10, Pin.OUT)
 
 def rand_rgb():
     # Return a randomised RGB tuple, max values of 50 to limit brightness
-    r = random.randint(0,50)
-    g = random.randint(0,50)
-    b = random.randint(0,50)
+    r = random.randint(0, 50)
+    g = random.randint(0, 50)
+    b = random.randint(0, 50)
     return r, g, b
 
 
@@ -88,7 +88,7 @@ def test_all_np():
     # with random colours in sequence
     clear_all()
     for x in range(pixels):
-        np[x] = (rand_rgb())
+        np[x] = rand_rgb()
         np.write()
         print("Pixel: " + str(x))
         time.sleep(0.4)
@@ -136,4 +136,3 @@ time.sleep(0.5)
 smile()
 time.sleep(1.0)
 heart()
-

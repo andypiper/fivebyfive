@@ -79,3 +79,9 @@ NB the CP docs list a C3 DevKit for module compat, but no download - ask on Disc
 - try the Wordle thing https://twitter.com/ciro/status/1488259161066459142
 - GitHub contributions?
 - ...
+
+
+### Reference
+
+![Annotated board](/reference/ESP32-C3FH4-RGB-reference.jpeg)
+

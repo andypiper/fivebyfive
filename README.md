@@ -1,14 +1,14 @@
 # "Five by Five"
 
-MicroPython code for a 01Space 5x5 Neopixel board (ESP32-C3 with USB-C)
+MicroPython code for a 01Space 5x5 Neopixel board (ESP32-C3FH4 with USB-C)
 
 It all started with [this Tweet from @GeekMomProjects](https://twitter.com/GeekMomProjects/status/1479210241807900676)...
 
 ## Images
 
-![01Space board](board-neopixels.jpeg)
+![01Space board](images/board-neopixels.jpeg)
 
-![01Space board reverse](board-chips.jpeg)
+![01Space board reverse](images/board-chips.jpeg)
 
 ## Requirements
 
