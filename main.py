@@ -2,6 +2,7 @@
 # see https://dev.to/andypiper/bringing-the-bling-with-micropython-hn1
 
 # this is a deliberately simple script to test the various board functions
+# should not require any additional Python modules outside of core MicroPython
 
 import esp32
 from machine import Pin
@@ -23,20 +24,6 @@ np = NeoPixel(neopin, pixels)
 # setup the button and the status LED
 button = Pin(9, Pin.IN)
 status_led = Pin(10, Pin.OUT)
-
-
-# scratchpad code testing
-
-# np[0] = (0,255,0) # top left green
-# np.write()
-# np[2] = (0,255,0) # top middle green
-# np.write()
-# np[4] = (255,0,0) # top right red
-# np.write()
-# np[24] = (255,0,255) # bottom right magenta
-# np.write()
-
-# print(machine.unique_id()) # output board ID
 
 
 def rand_rgb():

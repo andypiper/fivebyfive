@@ -60,7 +60,7 @@ $ esptool.py --chip esp32c3 --port /dev/ttyUSB0 --baud 460800 write_flash -z 0x0
 
 Now works fully (from the `v1.18-68-g1f04a9a1f` nightly).
 
-Yet to test the GPIO pins or the mystery (possibly Qwiic or Grove-compatible?) 4-pin connector on the board.
+Yet to test the GPIO pins, or the mysterious (Qwiic/JST-SH) 4-pin connector on the board.
 
 ### CircuitPython
 
@@ -76,10 +76,54 @@ NB the CP docs list a C3 DevKit for module compat, but no download - ask on Disc
 
 - build out more tests and effects for the basic code
 - play with [rshell](https://core-electronics.com.au/tutorials/getting-started-with-raspberry-pi-pico.html)
+  - issues holding a stable REPL connection. Power? USB reliability?
 - ampy
-- CheerPixel! (CheerDot? CheerSpot?)
+- ~~CheerPixel! (CheerDot? CheerSpot?)~~
+  - in `cl-all.py`
 - try the [Wordle thing](https://twitter.com/ciro/status/1488259161066459142)
 - GitHub contributions?
 - try out Qwiic connections
 - on-board web server for drawing / updating designs
 - ...
+
+### errors
+
+```text
+network config: ('172.16.0.50', '255.255.255.0', '172.16.0.1', '172.16.0.1')
+message received
+(0, 0, 255)
+message received
+(0, 128, 0)
+message received
+(253, 245, 230)
+message received
+(255, 0, 255)
+Build:Feb  7 2021
+rst:0x7 (TG0WDT_SYS_RST),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4038f9c6
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd6100,len:0xe3c
+load:0x403ce000,len:0x6dc
+load:0x403d0000,len:0x28c4
+entry 0x403ce000
+W (24) boot.esp32c3: PRO CPU has been reset by WDT.
+MicroPython v1.18 on 2022-02-01; ESP32C3 module with ESP32C3
+Type "help()" for more information.
+>>>
+```
+
+### scratchpad
+
+```text
+# scratchpad code testing
+# np[0] = (0,255,0) # top left green
+# np.write()
+# np[2] = (0,255,0) # top middle green
+# np.write()
+# np[4] = (255,0,0) # top right red
+# np.write()
+# np[24] = (255,0,255) # bottom right magenta
+# np.write()
+# print(machine.unique_id()) # output board ID
+```
