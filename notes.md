@@ -75,13 +75,16 @@ NB the CP docs list a C3 DevKit for module compat, but no download - ask on Disc
 ### Ideas / TODO
 
 - build out more tests and effects for the basic code
+  - Bluetooth, Wifi, button
+  - more patterns
 - play with [rshell](https://core-electronics.com.au/tutorials/getting-started-with-raspberry-pi-pico.html)
   - issues holding a stable REPL connection. Power? USB reliability?
 - ampy
 - ~~CheerPixel! (CheerDot? CheerSpot?)~~
-  - in `cl-all.py`
-- try the [Wordle thing](https://twitter.com/ciro/status/1488259161066459142)
-- GitHub contributions?
+  - in `cheerlights-demo.py`
+  - CheerPixel(s) still todo
+- test out the [Wordle thing](https://twitter.com/ciro/status/1488259161066459142)
+- GitHub contributions graph?
 - try out Qwiic connections
 - on-board web server for drawing / updating designs
 - ...
