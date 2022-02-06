@@ -116,6 +116,9 @@ Type "help()" for more information.
 >>>
 ```
 
+WDT = Watchdog Timer
+Maybe a sleep / wol thing? looks like ESP core crash. Only happened once, but after receiving several MQTT messages.
+
 ### scratchpad
 
 ```text
