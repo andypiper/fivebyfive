@@ -44,9 +44,9 @@ Noting that this is not in the [Espressif allocated list of PIDs](https://github
 >>> from machine import I2C
 >>> i2c = I2C(0,sda=Pin(0),scl=Pin(1))
 >>> i2c.scan()
-[63] <-- this is a SparkFun Qwiic Twist
+[63] # <-- this is a SparkFun Qwiic Twist
 >>> i2c.scan()
-[56] <- this is Adafruit AHT20
+[56] # <- this is Adafruit AHT20
 >>> i2c = I2C(0,sda=Pin(0),scl=Pin(1), freq=100000)
 >>> i2c.readfrom(0x38, 4)
 b'\x18\x00\x00\x00'
