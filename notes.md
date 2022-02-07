@@ -47,13 +47,18 @@ Noting that this is not in the [Espressif allocated list of PIDs](https://github
 [63] <-- this is a SparkFun Qwiic Twist
 >>> i2c.scan()
 [56] <- this is Adafruit AHT20
->>>
+>>> i2c = I2C(0,sda=Pin(0),scl=Pin(1), freq=100000)
+>>> i2c.readfrom(0x38, 4)
+b'\x18\x00\x00\x00'
 ```
 
+... these are the Qwiic/StemmaQT boards I have tried
 [35] Adafruit BH1750
 [56] Adafruit AHT20
 [57] Adafruit APDS-9960
 [63] SparkFun Qwiic Twist
+
+(appears to work fine with BCRobotics expander)
 
 ### Reference card
 
