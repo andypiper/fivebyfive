@@ -1,3 +1,7 @@
+# Notes
+
+## Hardware
+
 ### Board on macOS
 
 - location varies -> `/dev/tty.usbmodem21301` on my M1 Pro
@@ -5,23 +9,57 @@
 ```text
 USB JTAG/serial debug unit:
 
-  Product ID:	0x1001
-  Vendor ID:	0x303a
-  Version:	1.01
-  Serial Number:	84:F7:03:A0:F3:80
-  Speed:	Up to 12 Mb/s
-  Manufacturer:	Espressif
-  Location ID:	0x01130000 / 4
-  Current Available (mA):	500
-  Current Required (mA):	500
-  Extra Operating Current (mA):	0
+  Product ID: 0x1001
+  Vendor ID: 0x303a
+  Version: 1.01
+  Serial Number: 84:F7:03:A0:F3:80
+  Speed: Up to 12 Mb/s
+  Manufacturer: Espressif
+  Location ID: 0x01130000 / 4
+  Current Available (mA): 500
+  Current Required (mA): 500
+  Extra Operating Current (mA): 0
 ```
+
+### USB info
 
 **USB ID** - 1001:303a
 **VID** - 303a - Espressif
 **PID** - 1001 - USB JTAG/serial debug / ESP32-C3
 
 Noting that this is not in the [Espressif allocated list of PIDs](https://github.com/espressif/usb-pids/blob/main/allocated-pids.txt)
+
+### Pins
+
+- 0/1 I2C SDA/SCL
+- 8 NeoPixels
+- 9 Button
+- 10 Status LED, GPIO
+- 11 Reset (?) tbc
+- 2/3/4/5/6/7/18/19/20/21 GPIO
+
+### I2C
+
+```python
+>>> from machine import I2C
+>>> i2c = I2C(0,sda=Pin(0),scl=Pin(1))
+>>> i2c.scan()
+[63] <-- this is a SparkFun Qwiic Twist
+>>> i2c.scan()
+[56] <- this is Adafruit AHT20
+>>>
+```
+
+[35] Adafruit BH1750
+[56] Adafruit AHT20
+[57] Adafruit APDS-9960
+[63] SparkFun Qwiic Twist
+
+### Reference card
+
+![Annotated board](/reference/ESP32-C3FH4-RGB-reference.jpeg)
+
+## Other materials
 
 ### Manufacturer
 
@@ -68,11 +106,7 @@ Look into this - [potentialy similar board](https://circuitpython.org/board/ai_t
 
 NB the CP docs list a C3 DevKit for module compat, but no download - ask on Discord
 
-### Reference card
-
-![Annotated board](/reference/ESP32-C3FH4-RGB-reference.jpeg)
-
-### Ideas / TODO
+## Ideas / TODO
 
 - build out more tests and effects for the basic code
   - Bluetooth, Wifi, button
@@ -128,7 +162,7 @@ Type "help()" for more information.
 WDT = Watchdog Timer
 Maybe a sleep / wol thing? looks like ESP core crash. Only happened once, but after receiving several MQTT messages.
 
-### scratchpad
+### code scratchpad
 
 ```text
 # scratchpad code testing
