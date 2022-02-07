@@ -5,6 +5,8 @@
 # Update via a Tweet with the content "#cheerlights <colour>"
 # see https://cheerlights.com for more information
 #
+# blog: https://dev.to/andypiper/making-a-cheerdot-with-micropython-3ocf
+#
 # requires umqtt - e.g. in REPL, with wifi connected on board
 #
 # import upip
