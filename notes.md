@@ -77,6 +77,7 @@ NB the CP docs list a C3 DevKit for module compat, but no download - ask on Disc
 - build out more tests and effects for the basic code
   - Bluetooth, Wifi, button
   - more patterns
+- from @matt_trentini: "Take care about how many and how brightly you drive those Neopixels. Last I checked they can consume up to 60mA *each* and 20mA is common. Given the micro can consume a couple of hundred mA you can easily exceed your power limit (presumably max 500mA)." ... do some power checking!
 - play with [rshell](https://core-electronics.com.au/tutorials/getting-started-with-raspberry-pi-pico.html)
   - issues holding a stable REPL connection. Power? USB reliability?
 - ampy
