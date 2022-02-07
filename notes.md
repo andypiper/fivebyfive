@@ -80,6 +80,7 @@ NB the CP docs list a C3 DevKit for module compat, but no download - ask on Disc
 - play with [rshell](https://core-electronics.com.au/tutorials/getting-started-with-raspberry-pi-pico.html)
   - issues holding a stable REPL connection. Power? USB reliability?
 - ampy
+- alternative tooling e.g. PlatformIO
 - ~~CheerPixel! (CheerDot? CheerSpot?)~~
   - in `cheerlights-demo.py`
   - CheerPixel(s) still todo
