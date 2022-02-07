@@ -35,6 +35,7 @@ status_led = Pin(10, Pin.OUT)
 def do_connect():
     wlan = network.WLAN(network.STA_IF)
     wlan.active(True)
+    wlan.config(dhcp_hostname=client_name())
     if not wlan.isconnected():
         status_led.off()
         print("connecting to network...")
