@@ -138,7 +138,7 @@ NB the CP docs list a C3 DevKit for module compat, but no download - ask on Disc
   - patterns
 - test out the [Wordle thing](https://twitter.com/ciro/status/1488259161066459142)
 - GitHub contributions graph?
-- try out Qwiic I2C connections (identify pins)
+- try out Qwiic I2C connections ~~(identify pins)~~
   - e.g. Qwiic twist to drive pixel intensity
 - on-board web server for drawing / updating designs, setting and configuring pattern display and online source; also config wifi
 - ...
