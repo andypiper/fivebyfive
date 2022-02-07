@@ -64,7 +64,7 @@ Yet to test the GPIO pins, or the mysterious (Qwiic/JST-SH) 4-pin connector on t
 
 ### CircuitPython
 
-Look into this - [similar board](https://circuitpython.org/board/ai_thinker_esp32-c3s/)
+Look into this - [potentialy similar board](https://circuitpython.org/board/ai_thinker_esp32-c3s/)
 
 NB the CP docs list a C3 DevKit for module compat, but no download - ask on Discord
 
@@ -77,18 +77,25 @@ NB the CP docs list a C3 DevKit for module compat, but no download - ask on Disc
 - build out more tests and effects for the basic code
   - Bluetooth, Wifi, button
   - more patterns
-- from @matt_trentini: "Take care about how many and how brightly you drive those Neopixels. Last I checked they can consume up to 60mA *each* and 20mA is common. Given the micro can consume a couple of hundred mA you can easily exceed your power limit (presumably max 500mA)." ... do some power checking!
-- play with [rshell](https://core-electronics.com.au/tutorials/getting-started-with-raspberry-pi-pico.html)
-  - issues holding a stable REPL connection. Power? USB reliability?
-- ampy
-- alternative tooling e.g. PlatformIO
+  - replicate the Arduino samples
+- learn about the power draw
+  - [from @matt_trentini](https://twitter.com/matt_trentini/status/1490475943059542019): "Take care about how many and how brightly you drive those Neopixels. Last I checked they can consume up to 60mA *each* and 20mA is common. Given the micro can consume a couple of hundred mA you can easily exceed your power limit (presumably max 500mA)."
+  - try out various brightness options, per pixel analysis, etc.
+- tooling
+  - played with [rshell](https://core-electronics.com.au/tutorials/getting-started-with-raspberry-pi-pico.html)
+    - issues holding a stable REPL connection. Power? USB reliability?
+  - ampy (maintained?)
+  - PlatformIO
 - ~~CheerPixel! (CheerDot? CheerSpot?)~~
-  - in `cheerlights-demo.py`
-  - CheerPixel(s) still todo
+  - initial implementation in `cheerlights-demo.py` ([blog post](https://dev.to/andypiper/making-a-cheerdot-with-micropython-3ocf))
+  - CheerPixel(s) with history etc still todo
+  - brightness adjustment (divide by 10)
+  - patterns
 - test out the [Wordle thing](https://twitter.com/ciro/status/1488259161066459142)
 - GitHub contributions graph?
-- try out Qwiic connections
-- on-board web server for drawing / updating designs
+- try out Qwiic I2C connections (identify pins)
+  - e.g. Qwiic twist to drive pixel intensity
+- on-board web server for drawing / updating designs, setting and configuring pattern display and online source; also config wifi
 - ...
 
 ### errors
