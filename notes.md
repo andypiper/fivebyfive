@@ -67,15 +67,20 @@ These are the Qwiic/Stemma QT boards I have on hand / identified with the code.
 
 ## Other materials
 
-### Manufacturer
+### Espressif chip reference docs
+
+- [ESP32-C3 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf)
+- [ESP32-C3 Technical Reference Manual](https://www.espressif.com/sites/default/files/documentation/esp32-c3_technical_reference_manual_en.pdf)
+
+### Manufacturer info
 
 - [Arduino sketch](https://github.com/01Space/ESP32-C3FH4-RGB)
   - works fine using the ESP32 Arduino core v2.0.2 / ESP32C3 Dev Module board in Arduino IDE 2.0
   - code has NeoPixel on pin 8, 800 KHz with GRBW
 
-- [Video demo](https://www.youtube.com/watch?v=m-cgaS6eHv4)
+- [Video](https://www.youtube.com/watch?v=m-cgaS6eHv4)
 
-From the video notes:
+From the notes with the YouTube video:
 
 ```text
 ESP32-C3FH4, 2.4GHz Wi-Fi and supporting long-distance Bluetooth 5
@@ -96,8 +101,8 @@ Weight: 2.3g
 Flash to board:
 
 ```shell
-$ esptool.py --chip esp32c3 --port /dev/tty.usbmodem523201 erase_flash
-$ esptool.py --chip esp32c3 --port /dev/ttyUSB0 --baud 460800 write_flash -z 0x0 esp32c3-20220117-v1.18.bin
+esptool.py --chip esp32c3 --port /dev/tty.usbmodem523201 erase_flash
+esptool.py --chip esp32c3 --port /dev/ttyUSB0 --baud 460800 write_flash -z 0x0 esp32c3-20220117-v1.18.bin
 ```
 
 - [NeoPixel RMT issue](https://github.com/micropython/micropython/issues/8109)
@@ -170,7 +175,7 @@ Maybe a sleep / wol thing? looks like ESP core crash. Only happened once, but af
 
 ### code scratchpad
 
-```text
+```python
 # scratchpad code testing
 # np[0] = (0,255,0) # top left green
 # np.write()
