@@ -21,6 +21,50 @@ USB JTAG/serial debug unit:
   Extra Operating Current (mA): 0
 ```
 
+- from `ioreg -p IOUSB -l`
+
+```text
+    |   +-o USB JTAG/serial debug unit@01114000  <class IOUSBHostDevice, id 0x10001c6b3, registered, matched, active, busy 0 (234 ms), retain 46>
+    |       {
+    |         "sessionID" = 4586099087818
+    |         "USBSpeed" = 1
+    |         "idProduct" = 4097
+    |         "iManufacturer" = 1
+    |         "bDeviceClass" = 239
+    |         "IOPowerManagement" = {"PowerOverrideOn"=Yes,"DevicePowerState"=2,"CurrentPowerState"=2,"CapabilityFlags"=32768,"MaxPowerState"=2,"DriverPowerState"=0}
+    |         "bcdDevice" = 257
+    |         "bMaxPacketSize0" = 64
+    |         "iProduct" = 2
+    |         "iSerialNumber" = 3
+    |         "bNumConfigurations" = 1
+    |         "USB Product Name" = "USB JTAG_serial debug unit"
+    |         "USB Address" = 10
+    |         "locationID" = 17907712
+    |         "bDeviceSubClass" = 2
+    |         "bcdUSB" = 512
+    |         "kUSBSerialNumberString" = "84:F7:03:A0:EF:84"
+    |         "kUSBCurrentConfiguration" = 1
+    |         "IOCFPlugInTypes" = {"9dc7b780-9ec0-11d4-a54f-000a27052861"="IOUSBHostFamily.kext/Contents/PlugIns/IOUSBLib.bundle"}
+    |         "bDeviceProtocol" = 1
+    |         "USBPortType" = 0
+    |         "IOServiceDEXTEntitlements" = (("com.apple.developer.driverkit.transport.usb"))
+    |         "USB Vendor Name" = "Espressif"
+    |         "Device Speed" = 1
+    |         "idVendor" = 12346
+    |         "kUSBProductString" = "USB JTAG/serial debug unit"
+    |         "USB Serial Number" = "84:F7:03:A0:EF:84"
+    |         "IOGeneralInterest" = "IOCommand is not serializable"
+    |         "kUSBAddress" = 10
+    |         "kUSBVendorString" = "Espressif"
+    |       }
+```
+
+```text
+ioreg -r -c IOUSBHostDevice -l | rg /dev                                                                                    git:(main|✚1…1
+  | |   |     |         "IOCalloutDevice" = "/dev/cu.usbmodem111401"
+  | |   |     |         "IODialinDevice" = "/dev/tty.usbmodem111401"
+```
+
 ### USB info
 
 **USB ID** - 1001:303a
