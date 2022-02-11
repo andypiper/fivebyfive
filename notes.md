@@ -59,8 +59,9 @@ USB JTAG/serial debug unit:
     |       }
 ```
 
+- from `ioreg -r -c IOUSBHostDevice -l | rg /dev`
+
 ```text
-ioreg -r -c IOUSBHostDevice -l | rg /dev                                                                                    git:(main|✚1…1
   | |   |     |         "IOCalloutDevice" = "/dev/cu.usbmodem111401"
   | |   |     |         "IODialinDevice" = "/dev/tty.usbmodem111401"
 ```
@@ -68,7 +69,9 @@ ioreg -r -c IOUSBHostDevice -l | rg /dev                                        
 ### USB info
 
 **USB ID** - 1001:303a
+
 **VID** - 303a - Espressif
+
 **PID** - 1001 - USB JTAG/serial debug / ESP32-C3
 
 Noting that this is not in the [Espressif allocated list of PIDs](https://github.com/espressif/usb-pids/blob/main/allocated-pids.txt)
