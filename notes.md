@@ -161,7 +161,15 @@ Yet to test the GPIO pins. I2C detects sensors, data in untested.
 
 Look into this - [potentially similar board](https://circuitpython.org/board/ai_thinker_esp32-c3s/)
 
-NB the CP docs list a C3 DevKit for module compat, but no download - ask on Adafruit Discord
+NB the CP docs list a C3 DevKit for module compat, but no download - ask on Adafruit Discord...
+
+From Discord conversation:
+
+```text
+we are just getting started with the C3. Correct, it can't present CIRCUITPY. The RMT code in MicroPython may or may not be used in CircuitPython: we may have our own version anyway.
+
+we are working on a BLE workflow for the C3. It's very early for C3 support now.
+```
 
 ## Ideas / TODO
 
