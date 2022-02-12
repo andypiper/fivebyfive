@@ -184,6 +184,7 @@ we are working on a BLE workflow for the C3. It's very early for C3 support now.
   - played with [rshell](https://core-electronics.com.au/tutorials/getting-started-with-raspberry-pi-pico.html)
     - issues holding a stable REPL connection. Power? USB reliability?
   - ampy (maintained?)
+    - works for copy to device / list contents
   - try a PlatformIO setup
 - ~~CheerPixel! (CheerDot? CheerSpot?)~~
   - initial implementation in `cheerlights-demo.py` ([blog post](https://dev.to/andypiper/making-a-cheerdot-with-micropython-3ocf))
@@ -196,6 +197,13 @@ we are working on a BLE workflow for the C3. It's very early for C3 support now.
   - e.g. Qwiic twist to drive pixel intensity
 - on-board web server for drawing / updating designs, setting and configuring pattern display and online source; also config wifi
 - ...
+
+
+### investigate
+
+- RTC missing irq
+- how to deepsleep
+- esp32 temperature functions
 
 ### errors
 
@@ -230,7 +238,6 @@ Maybe a sleep / wol thing? looks like ESP core crash. Only happened once, but af
 ### code scratchpad
 
 ```python
-# scratchpad code testing
 # np[0] = (0,255,0) # top left green
 # np.write()
 # np[2] = (0,255,0) # top middle green
@@ -240,4 +247,9 @@ Maybe a sleep / wol thing? looks like ESP core crash. Only happened once, but af
 # np[24] = (255,0,255) # bottom right magenta
 # np.write()
 # print(machine.unique_id()) # output board ID
+```
+
+```python
+# needs non-zero keepalive for mosquitto 2.0.12+
+c = MQTTClient("umqtt_client", "homebridge.local", keepalive=1)
 ```
