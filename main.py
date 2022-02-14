@@ -109,7 +109,7 @@ def heart():
     # Light the pixels into a heart shape
     lights = [1, 3, 5, 6, 8, 9, 10, 11, 12, 13, 14, 16, 17, 18, 22]
     for x in lights:
-        np[x] = (50, 0, 0)  # red heart (TODO: customisable colour)
+        np[x] = (7,1,2)  # pink heart (TODO: customisable colour)
     np.write()
     print("<3")
 
