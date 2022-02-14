@@ -171,6 +171,26 @@ we are just getting started with the C3. Correct, it can't present CIRCUITPY. Th
 we are working on a BLE workflow for the C3. It's very early for C3 support now.
 ```
 
+## Videos
+
+### YouTube
+
+- my [playlist](https://www.youtube.com/playlist?list=PLBlxSZoETPB-GN-FPKTdkK5IxIUz5LEIO)
+
+- original [Video](https://www.youtube.com/watch?v=m-cgaS6eHv4)
+  - [same thing, different channel](https://www.youtube.com/watch?v=9GeGNKnFHJw)
+- [Windows driver installation (Chinese)](https://www.youtube.com/watch?v=QsQvsG6elDM)
+- [ESP32 C3 RGB LED blinker](https://www.youtube.com/watch?v=6XdavE2z5hk)
+- [ESP32 C3 RISC-V Wi-Fi Bluetooth](https://www.youtube.com/watch?v=WwOiEF_vm8g)
+
+### Twitter
+
+- [Tweet](https://twitter.com/yongxiangxu251/status/1455866140165509121)
+- [Tweet](https://twitter.com/GeekMomProjects/status/1483695065629224960)
+- [Tweet](https://twitter.com/GeekMomProjects/status/1489168933709967366)
+- [Tweet](https://twitter.com/ciro/status/1488259161066459142)
+- [Tweet](https://twitter.com/tablatronix/status/1488629644823871495)
+
 ## Ideas / TODO
 
 - build out more tests and effects for the basic code
@@ -191,13 +211,12 @@ we are working on a BLE workflow for the C3. It's very early for C3 support now.
   - CheerPixel(s) with history etc still todo
   - brightness adjustment (divide by 10)
   - patterns
-- test out the [Wordle thing](https://twitter.com/ciro/status/1488259161066459142)
+- ~~test out the [Wordle thing](https://twitter.com/ciro/status/1488259161066459142)~~
 - GitHub contributions graph?
 - try out Qwiic I2C connections ~~(identify pins)~~
   - e.g. Qwiic twist to drive pixel intensity
 - on-board web server for drawing / updating designs, setting and configuring pattern display and online source; also config wifi
 - ...
-
 
 ### investigate
 
