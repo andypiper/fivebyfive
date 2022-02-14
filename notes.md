@@ -188,6 +188,7 @@ we are working on a BLE workflow for the C3. It's very early for C3 support now.
 - [Tweet](https://twitter.com/yongxiangxu251/status/1455866140165509121)
 - [Tweet](https://twitter.com/GeekMomProjects/status/1483695065629224960)
 - [Tweet](https://twitter.com/GeekMomProjects/status/1489168933709967366)
+- [Tweet](https://mobile.twitter.com/GeekMomProjects/status/1490163560688672768)
 - [Tweet](https://twitter.com/ciro/status/1488259161066459142)
 - [Tweet](https://twitter.com/tablatronix/status/1488629644823871495)
 
@@ -196,7 +197,7 @@ we are working on a BLE workflow for the C3. It's very early for C3 support now.
 - build out more tests and effects for the basic code
   - Bluetooth, Wifi, button
   - more patterns
-  - replicate the Arduino samples
+  - replicate the [Arduino samples](https://github.com/01Space/ESP32-C3FH4-RGB) in Mpy
 - learn about the power draw
   - [from @matt_trentini](https://twitter.com/matt_trentini/status/1490475943059542019): "Take care about how many and how brightly you drive those Neopixels. Last I checked they can consume up to 60mA *each* and 20mA is common. Given the micro can consume a couple of hundred mA you can easily exceed your power limit (presumably max 500mA)."
   - try out various brightness options, per pixel analysis, etc.
