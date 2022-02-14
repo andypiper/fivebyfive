@@ -9,7 +9,7 @@ import ahtx0
 
 i2c = SoftI2C(scl=Pin(1), sda=Pin(0))
 
-sensor = ahtx0.AHT10(i2c)
+sensor = ahtx0.AHT20(i2c)
 
 while True:
     print("\nTemperature: %0.2f C" % sensor.temperature)
