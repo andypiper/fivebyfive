@@ -202,16 +202,18 @@ we are working on a BLE workflow for the C3. It's very early for C3 support now.
   - [from @matt_trentini](https://twitter.com/matt_trentini/status/1490475943059542019): "Take care about how many and how brightly you drive those Neopixels. Last I checked they can consume up to 60mA *each* and 20mA is common. Given the micro can consume a couple of hundred mA you can easily exceed your power limit (presumably max 500mA)."
   - try out various brightness options, per pixel analysis, etc.
 - tooling
-  - played with [rshell](https://core-electronics.com.au/tutorials/getting-started-with-raspberry-pi-pico.html)
+  - played with [`rshell`](https://core-electronics.com.au/tutorials/getting-started-with-raspberry-pi-pico.html)
     - issues holding a stable REPL connection. Power? USB reliability?
-  - ampy (maintained?)
+  - `ampy` (maintained?)
     - works for copy to device / list contents
   - try a PlatformIO setup
+  - learn about `mpremote`
 - ~~CheerPixel! (CheerDot? CheerSpot?)~~
   - initial implementation in `cheerlights-demo.py` ([blog post](https://dev.to/andypiper/making-a-cheerdot-with-micropython-3ocf))
+  - improve colour matching (pink etc - seems white)
   - CheerPixel(s) with history etc still todo
   - brightness adjustment (divide by 10)
-  - patterns
+  - pattern palette
 - ~~test out the [Wordle thing](https://twitter.com/ciro/status/1488259161066459142)~~
 - GitHub contributions graph?
 - try out Qwiic I2C connections ~~(identify pins)~~
