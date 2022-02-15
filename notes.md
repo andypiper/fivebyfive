@@ -188,9 +188,10 @@ we are working on a BLE workflow for the C3. It's very early for C3 support now.
 - [Tweet](https://twitter.com/yongxiangxu251/status/1455866140165509121)
 - [Tweet](https://twitter.com/GeekMomProjects/status/1483695065629224960)
 - [Tweet](https://twitter.com/GeekMomProjects/status/1489168933709967366)
-- [Tweet](https://mobile.twitter.com/GeekMomProjects/status/1490163560688672768)
+- [Tweet](https://twitter.com/GeekMomProjects/status/1490163560688672768)
 - [Tweet](https://twitter.com/ciro/status/1488259161066459142)
 - [Tweet](https://twitter.com/tablatronix/status/1488629644823871495)
+- [Tweet](https://twitter.com/andypiper/status/1493237488667795456)
 
 ## Ideas / TODO
 
