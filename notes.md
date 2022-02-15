@@ -141,7 +141,7 @@ Size: 21 x 18 mm
 Weight: 2.3g
 ```
 
-- [CNX News item](https://www.cnx-software.com/2022/01/07/board-with-25-rgb-leds-is-offered-with-esp32-c3-or-esp32-pico-d4/)
+- [CNX News item](https://www.cnx-software.com/2022/01/07/board-with-25-rgb-leds-is-offered-with-esp32-c3-or-esp32-pico-d4/) (some conversation in the comments)
 
 ### MicroPython
 
@@ -155,7 +155,12 @@ esptool.py --chip esp32c3 --port /dev/tty.usbmodem523201 --baud 460800 write_fla
 - [NeoPixel RMT issue](https://github.com/micropython/micropython/issues/8109)
   - Now works fully with bitstream channel manually set to 0 (as from the `v1.18-68-g1f04a9a1f` MicroPython nightly).
 
-Yet to test the GPIO pins. I2C detects sensors, data in untested.
+Yet to test the GPIO pins.
+
+#### MicroPython resources
+
+- [forums](https://forum.micropython.org/)
+- [Slack](https://slack-micropython.herokuapp.com/)
 
 ### CircuitPython
 
@@ -198,6 +203,7 @@ we are working on a BLE workflow for the C3. It's very early for C3 support now.
 - build out more tests and effects for the basic code
   - Bluetooth, Wifi, button
   - more patterns
+    - rainbow heart
   - replicate the [Arduino samples](https://github.com/01Space/ESP32-C3FH4-RGB) in Mpy
 - learn about the power draw
   - [from @matt_trentini](https://twitter.com/matt_trentini/status/1490475943059542019): "Take care about how many and how brightly you drive those Neopixels. Last I checked they can consume up to 60mA *each* and 20mA is common. Given the micro can consume a couple of hundred mA you can easily exceed your power limit (presumably max 500mA)."
@@ -208,7 +214,7 @@ we are working on a BLE workflow for the C3. It's very early for C3 support now.
   - `ampy` (maintained?)
     - works for copy to device / list contents
   - try a PlatformIO setup
-  - learn about `mpremote`
+  - learn about [`mpremote`](https://docs.micropython.org/en/latest/reference/mpremote.html)
 - ~~CheerPixel! (CheerDot? CheerSpot?)~~
   - initial implementation in `cheerlights-demo.py` ([blog post](https://dev.to/andypiper/making-a-cheerdot-with-micropython-3ocf))
   - improve colour matching (pink etc - seems white)
@@ -219,14 +225,21 @@ we are working on a BLE workflow for the C3. It's very early for C3 support now.
 - GitHub contributions graph?
 - try out Qwiic I2C connections ~~(identify pins)~~
   - e.g. Qwiic twist to drive pixel intensity
+  - look into I2C drivers
 - on-board web server for drawing / updating designs, setting and configuring pattern display and online source; also config wifi
+- create a MicroPython board definition (e.g [atom](https://github.com/micropython/micropython/blob/master/ports/esp32/boards/M5STACK_ATOM/modules/atom.py) or [other third party](https://github.com/dhylands/wiki/wiki/MicroPython-Board-files))
+- create a case (3D print or acrylic cut)
+- Arduino samples (e.g. for Wifi)
+  - possibly clean up existing maker's project
+- try out TinyGo
+- try out Rust
 - ...
 
 ### investigate
 
 - RTC missing irq
 - how to deepsleep
-- esp32 temperature functions
+- esp32 temperature functions (missing on ESP32-C3?)
 
 ### errors
 

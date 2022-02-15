@@ -1,6 +1,6 @@
 # "Five by Five"
 
-MicroPython code for a 01Space 5x5 Neopixel board (ESP32-C3FH4 with USB-C)
+MicroPython code for a 01Space 5x5 Neopixel RISC V board (ESP32-C3FH4 with USB-C) - sometimes called a "bedazzled" ESP32-C3!
 
 It all started with [this Tweet from @GeekMomProjects](https://twitter.com/GeekMomProjects/status/1479210241807900676)...
 
@@ -36,17 +36,20 @@ ampy -p /dev/cu.usbmodem11301 mkdir lib
 ampy -p /dev/cu.usbmodem11301 put ahtx0.py lib/ahtx0.py
 ```
 
+Another option is to [use `mpremote`](https://docs.micropython.org/en/latest/reference/mpremote.html), the official MicroPython command-line tool
+
 ## Programs
 
 - `main.py` will run a series of simple tests on the LEDs.
 - `cheerlights-demo.py` will display the [Cheerlights](https://cheerlights.com) colour on an ongoing basis. Needs to be edited with valid Wifi network values for your network.
-- `aht20-test.py` reads and prints out values from an e.g. Adafruit AHT20 Temperature and Humidity sensor connected to the Qwiic port.
+- `aht20-test.py` reads and prints out values from an Adafruit AHT20 Temperature and Humidity sensor connected to the I2C port.
 
 ## More information
 
 - various learnings in the [notes](notes.md) (which I could probably have done as a GH wiki...)
 - [Bringing the bling with MicroPython](https://dev.to/andypiper/bringing-the-bling-with-micropython-hn1) (blog post, with background)
 - [Making a CheerDot with MicroPython](https://dev.to/andypiper/making-a-cheerdot-with-micropython-3ocf) (blog series, part 2)
+- [Using I2C in MicroPython](https://dev.to/andypiper/using-i2c-in-micropython-4b9n) (blog series, part 3)
 
 ### LICENSE
 
@@ -54,4 +57,4 @@ MIT License Copyright (c) 2022 Andy Piper
 
 ### CONTRIBUTING
 
-See [Contributing](CONTRIBUTING.md) and follow the [Code of Conduct](.github/CODE_OF_CONDUCT.md). Thanks!
+See [Contributing](CONTRIBUTING.md), and follow the [Code of Conduct](.github/CODE_OF_CONDUCT.md). Thanks!
