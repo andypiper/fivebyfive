@@ -36,7 +36,7 @@ ampy -p /dev/cu.usbmodem11301 mkdir lib
 ampy -p /dev/cu.usbmodem11301 put ahtx0.py lib/ahtx0.py
 ```
 
-Another option is to [use `mpremote`](https://docs.micropython.org/en/latest/reference/mpremote.html), the official MicroPython command-line tool
+Another option is to [use `mpremote`](https://docs.micropython.org/en/latest/reference/mpremote.html), the official MicroPython command-line tool.
 
 ## Programs
 
