@@ -223,6 +223,7 @@ we are working on a BLE workflow for the C3. It's very early for C3 support now.
   - pattern palette
 - ~~test out the [Wordle thing](https://twitter.com/ciro/status/1488259161066459142)~~
 - GitHub contributions graph?
+- Morse code transmitter (maybe MQTT driven?)
 - try out Qwiic I2C connections ~~(identify pins)~~
   - e.g. Qwiic twist to drive pixel intensity
   - look into I2C drivers
