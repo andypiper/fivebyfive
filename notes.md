@@ -234,6 +234,7 @@ we are working on a BLE workflow for the C3. It's very early for C3 support now.
 - create a case (3D print or acrylic cut)
 - Arduino samples (e.g. for Wifi)
   - possibly clean up existing maker's project
+  - [WIP](https://github.com/andypiper/ESP32-C3FH4-RGB)
 - try out TinyGo
   - initial test working, thanks to help from @codepope
 - try out Rust
