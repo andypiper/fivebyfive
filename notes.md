@@ -123,7 +123,7 @@ These are the Qwiic/Stemma QT boards I have on hand / identified with the code.
 
 - [Arduino sketch](https://github.com/01Space/ESP32-C3FH4-RGB)
   - works fine using the ESP32 Arduino core v2.0.2 / ESP32C3 Dev Module board in Arduino IDE 2.0
-  - code has NeoPixel on pin 8, 800 KHz with GRBW
+  - code has NeoPixel on pin 8, 800 KHz with GRBW (but the LEDs are actually GRB with no separate white channel)
 
 - [Video](https://www.youtube.com/watch?v=m-cgaS6eHv4)
 
@@ -140,6 +140,8 @@ Ceramic Antenna
 Size: 21 x 18 mm
 Weight: 2.3g
 ```
+
+NB the WS2821B is attached to 3.3V
 
 - [CNX News item](https://www.cnx-software.com/2022/01/07/board-with-25-rgb-leds-is-offered-with-esp32-c3-or-esp32-pico-d4/) (some conversation in the comments)
 
@@ -233,8 +235,9 @@ we are working on a BLE workflow for the C3. It's very early for C3 support now.
 - Arduino samples (e.g. for Wifi)
   - possibly clean up existing maker's project
 - try out TinyGo
+  - initial test working, thanks to help from @codepope
 - try out Rust
-- ...
+- can NodeMCU run on this? Do not think ESP32-C3 works there yet
 
 ### investigate
 

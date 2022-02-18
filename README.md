@@ -50,6 +50,8 @@ Another option is to [use `mpremote`](https://docs.micropython.org/en/latest/ref
 - [Bringing the bling with MicroPython](https://dev.to/andypiper/bringing-the-bling-with-micropython-hn1) (blog post, with background)
 - [Making a CheerDot with MicroPython](https://dev.to/andypiper/making-a-cheerdot-with-micropython-3ocf) (blog series, part 2)
 - [Using I2C in MicroPython](https://dev.to/andypiper/using-i2c-in-micropython-4b9n) (blog series, part 3)
+- [MicroPython on ESP32 Forum](https://forum.micropython.org/viewforum.php?f=18)
+- [MicroPython community Slack](https://slack-micropython.herokuapp.com/) (get an invite)
 
 ### LICENSE
 
@@ -57,4 +59,4 @@ MIT License Copyright (c) 2022 Andy Piper
 
 ### CONTRIBUTING
 
-See [Contributing](CONTRIBUTING.md), and follow the [Code of Conduct](.github/CODE_OF_CONDUCT.md). Thanks!
+See [Contributing](./CONTRIBUTING.md), and follow the [Code of Conduct](.github/CODE_OF_CONDUCT.md). Thanks!
