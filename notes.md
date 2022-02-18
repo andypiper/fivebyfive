@@ -76,7 +76,10 @@ USB JTAG/serial debug unit:
 
 Noting that this is not in the [Espressif allocated list of PIDs](https://github.com/espressif/usb-pids/blob/main/allocated-pids.txt)
 
+**important** USB-C to USB-C cables do not appear to deliver power to the board. USB-A to USB-C data cables do work (noted by a reviewer on BangGood, confirmed here)
+
 ### Pins
+
 
 - 0/1 I2C SDA/SCL
 - 8 NeoPixels
@@ -246,6 +249,7 @@ we are working on a BLE workflow for the C3. It's very early for C3 support now.
 - Arduino samples (e.g. for Wifi)
   - possibly clean up existing maker's project
   - [WIP](https://github.com/andypiper/ESP32-C3FH4-RGB)
+  - try WLED and FastLED
 - try out TinyGo
   - initial test working, thanks to help from @codepope
 - try out Rust
