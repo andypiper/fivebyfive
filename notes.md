@@ -202,6 +202,8 @@ we are working on a BLE workflow for the C3. It's very early for C3 support now.
 
 ## Ideas / TODO
 
+### MicroPython
+
 - build out more tests and effects for the basic code
   - Bluetooth, Wifi, button
   - more patterns
@@ -231,6 +233,15 @@ we are working on a BLE workflow for the C3. It's very early for C3 support now.
   - look into I2C drivers
 - on-board web server for drawing / updating designs, setting and configuring pattern display and online source; also config wifi
 - create a MicroPython board definition (e.g [atom](https://github.com/micropython/micropython/blob/master/ports/esp32/boards/M5STACK_ATOM/modules/atom.py) or [other third party](https://github.com/dhylands/wiki/wiki/MicroPython-Board-files))
+
+### investigate
+
+- RTC missing irq
+- how to deepsleep
+- esp32 temperature functions (missing on ESP32-C3?)
+
+### Non-MicroPython
+
 - create a case (3D print or acrylic cut)
 - Arduino samples (e.g. for Wifi)
   - possibly clean up existing maker's project
@@ -238,13 +249,8 @@ we are working on a BLE workflow for the C3. It's very early for C3 support now.
 - try out TinyGo
   - initial test working, thanks to help from @codepope
 - try out Rust
-- can NodeMCU run on this? Do not think ESP32-C3 works there yet
-
-### investigate
-
-- RTC missing irq
-- how to deepsleep
-- esp32 temperature functions (missing on ESP32-C3?)
+- can NodeMCU run on this? Do not think ESP32-C3 [fully works](https:/github.com/nodemcu/nodemcu-firmware/pull/3493) there yet (but boardsexist, so 🤷)
+- [uLisp on ESP32](https://eightytwo.net/blog/running-ulisp-on-an-esp32#downloading-ulisp)
 
 ### errors
 
