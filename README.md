@@ -22,7 +22,7 @@ Now, the goal of this project is to aggregate information, and different example
 Each language subdirectory contains more information specific to build and installation.
 
 - [`images/`](./images) various images to illustrate functionality and the board itself
-- [`reference/`](./reference) annotated images and schematics
+- [`reference/`](./reference) annotated images and schematics. The included schematic diagram has been kindly supplied by Jiale Xu of 01Space.
 
 ### More information
 
