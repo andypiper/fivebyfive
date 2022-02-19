@@ -2,7 +2,11 @@
 
 Multilingual code for a 01Space 5x5 Neopixel RISC V board (ESP32-C3FH4 with USB-C) - sometimes called a "bedazzled" ESP32-C3!
 
+## Background
+
 It all started with [this Tweet from @GeekMomProjects](https://twitter.com/GeekMomProjects/status/1479210241807900676)...
+
+Now, the goal of this project is to aggregate information, and different examples, to enable the community to learn about and use the ESP32-C3FH4-RGB board, created by [01Space](https://github.com/01Space).
 
 ## Images
 
