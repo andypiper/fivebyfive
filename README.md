@@ -21,7 +21,7 @@ Now, the goal of this project is to aggregate information, and different example
 - [`micropython/`](./micropython) MicroPython code examples
 - [`tinygo/`](./tinygo) TinyGo code examples
 
-Each language subdirectory contains more information specific to build and installation.
+Each language subdirectory contains more information specific to build and usage of the code.
 
 - [`images/`](./images) various images to illustrate functionality and the board itself
 - [`reference/`](./reference) annotated images and schematics. The included schematic diagram has been kindly supplied by Jiale Xu of 01Space.
@@ -39,11 +39,11 @@ Each language subdirectory contains more information specific to build and insta
 
 ![Annotated board](/reference/ESP32-C3FH4-RGB-reference.jpeg)
 
-More images in [`images/`](images/), PDF/JPEG reference cards in [`reference/`](reference/) (schematic to come)
+More images in [`images/`](./images), PDF/JPEG reference cards and schematic in [`reference/`](./reference)
 
 ## License
 
-MIT License Copyright (c) 2022 Andy Piper
+MIT License Copyright (c) 2022 Andy Piper; some code samples may carry alternative licenses.
 
 ## Contributing
 
