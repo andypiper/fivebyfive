@@ -18,6 +18,9 @@ Now, the goal of this project is to aggregate information, and different example
 - [`arduino/`](./arduino) updated version of the original Arduino code for the board (may need to populate via `git pull --recurse-submodules`)
 - [`micropython/`](./micropython) MicroPython code examples
 - [`tinygo/`](./tinygo) TinyGo code examples
+
+Each language subdirectory contains more information specific to build and installation.
+
 - [`images/`](./images) various images to illustrate functionality and the board itself
 - [`reference/`](./reference) annotated images and schematics
 
