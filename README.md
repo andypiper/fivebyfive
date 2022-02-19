@@ -25,6 +25,7 @@ More images in [`images/`](images/), PDF/JPEG reference cards in [`reference/`](
 ## More information
 
 - various learnings in the [notes](notes.md) (will be organised into a GH wiki soon)
+- [YouTube playlist](https://www.youtube.com/watch?v=SQO4Dn0vE3k&list=PLBlxSZoETPB-GN-FPKTdkK5IxIUz5LEIO) of some of these samples
 
 ## LICENSE
 
