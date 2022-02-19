@@ -2,6 +2,8 @@
 
 Multilingual code for a 01Space 5x5 Neopixel RISC V board (ESP32-C3FH4 with USB-C) - sometimes called a "bedazzled" ESP32-C3!
 
+![fivebyfive](https://socialify.git.ci/andypiper/fivebyfive/image?description=1&font=KoHo&forks=1&issues=1&logo=https%3A%2F%2Fgithub.com%2Fandypiper%2Ffivebyfive%2Fblob%2Fmain%2Fimages%2Ficon.png%3Fraw%3Dtrue&name=1&owner=1&pattern=Circuit%20Board&stargazers=1&theme=Dark)
+
 ## Background
 
 It all started with [this Tweet from @GeekMomProjects](https://twitter.com/GeekMomProjects/status/1479210241807900676)...
