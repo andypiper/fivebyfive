@@ -80,7 +80,6 @@ Noting that this is not in the [Espressif allocated list of PIDs](https://github
 
 ### Pins
 
-
 - 0/1 I2C SDA/SCL
 - 8 NeoPixels
 - 9 Button
@@ -125,7 +124,6 @@ These are the Qwiic/Stemma QT boards I have on hand / identified with the code.
 ### Board manufacturer info
 
 - [Arduino sketch](https://github.com/01Space/ESP32-C3FH4-RGB)
-  - works fine using the ESP32 Arduino core v2.0.2 / ESP32C3 Dev Module board in Arduino IDE 2.0
   - code has NeoPixel on pin 8, 800 KHz with GRBW (but the LEDs are actually GRB with no separate white channel)
 
 - [Video](https://www.youtube.com/watch?v=m-cgaS6eHv4)
@@ -144,9 +142,17 @@ Size: 21 x 18 mm
 Weight: 2.3g
 ```
 
-NB the WS2821B is attached to 3.3V
+NB the WS2821B 1515 is attached to 3.3V
 
 - [CNX News item](https://www.cnx-software.com/2022/01/07/board-with-25-rgb-leds-is-offered-with-esp32-c3-or-esp32-pico-d4/) (some conversation in the comments)
+
+### Arduino
+
+See [this GitHub issue](https://github.com/espressif/esp-idf/issues/8046) for information about Wifi connections breaking the Serial console.
+
+Mfr code works fine using the ESP32 Arduino core v2.0.2 / ESP32C3 Dev Module board in Arduino IDE 2.0
+
+Also confirmed working in Arduino IDE 1.8.x with the ESP32 dev builds.
 
 ### MicroPython
 
