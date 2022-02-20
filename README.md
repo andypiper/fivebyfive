@@ -17,7 +17,7 @@ Now, the goal of this project is to aggregate information, and different example
 
 ## Contents
 
-- [`arduino/`](./arduino) updated version of the original Arduino code for the board (may need to populate via `git pull --recurse-submodules`)
+- `arduino/` updated version of the original Arduino code for the board (may need to populate via `git pull --recurse-submodules`)
 - [`micropython/`](./micropython) MicroPython code examples
 - [`tinygo/`](./tinygo) TinyGo code examples
 
