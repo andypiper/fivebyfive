@@ -154,9 +154,11 @@ Mfr code works fine using the ESP32 Arduino core v2.0.2 / ESP32C3 Dev Module boa
 
 Also confirmed working in Arduino IDE 1.8.x with the ESP32 dev builds.
 
+We need to use the dev builds from Espressif in order to get the ESP32-C3 support.
+
 ### MicroPython
 
-Flash to board:
+Flash a MicroPython build to the board:
 
 ```shell
 esptool.py --chip esp32c3 --port /dev/tty.usbmodem523201 erase_flash
@@ -170,10 +172,12 @@ Yet to test the GPIO pins.
 
 #### MicroPython resources
 
-- [forums](https://forum.micropython.org/)
+- [Forums](https://forum.micropython.org/)
 - [Slack](https://slack-micropython.herokuapp.com/)
 
 ### CircuitPython
+
+_currently not supported_
 
 Look into this - [potentially similar board](https://circuitpython.org/board/ai_thinker_esp32-c3s/)
 
@@ -181,11 +185,21 @@ NB the CP docs list a C3 DevKit for module compat, but no download - ask on Adaf
 
 From Discord conversation:
 
-```text
-we are just getting started with the C3. Correct, it can't present CIRCUITPY. The RMT code in MicroPython may or may not be used in CircuitPython: we may have our own version anyway.
+`we are just getting started with the C3. Correct, it can't present CIRCUITPY. The RMT code in MicroPython may or may not be used in CircuitPython: we may have our own version anyway.`
 
-we are working on a BLE workflow for the C3. It's very early for C3 support now.
-```
+`we are working on a BLE workflow for the C3. It's very early for C3 support now.`
+
+### TinyGo
+
+works, basic notes in the TinyGo folder
+
+### Rust
+
+_untested_
+
+### uLisp
+
+_untested_
 
 ## Videos
 
@@ -218,9 +232,6 @@ we are working on a BLE workflow for the C3. It's very early for C3 support now.
   - more patterns
     - rainbow heart
   - replicate the [Arduino samples](https://github.com/01Space/ESP32-C3FH4-RGB) in Mpy
-- learn about the power draw
-  - [from @matt_trentini](https://twitter.com/matt_trentini/status/1490475943059542019): "Take care about how many and how brightly you drive those Neopixels. Last I checked they can consume up to 60mA *each* and 20mA is common. Given the micro can consume a couple of hundred mA you can easily exceed your power limit (presumably max 500mA)."
-  - try out various brightness options, per pixel analysis, etc.
 - tooling
   - played with [`rshell`](https://core-electronics.com.au/tutorials/getting-started-with-raspberry-pi-pico.html)
     - issues holding a stable REPL connection. Power? USB reliability?
@@ -251,10 +262,12 @@ we are working on a BLE workflow for the C3. It's very early for C3 support now.
 
 ### Non-MicroPython
 
+- learn about the power draw
+  - [from @matt_trentini](https://twitter.com/matt_trentini/status/1490475943059542019): "Take care about how many and how brightly you drive those Neopixels. Last I checked they can consume up to 60mA *each* and 20mA is common. Given the micro can consume a couple of hundred mA you can easily exceed your power limit (presumably max 500mA)."
+  - try out various brightness options, per pixel analysis, etc.
 - create a case (3D print or acrylic cut)
 - Arduino samples (e.g. for Wifi)
-  - possibly clean up existing maker's project
-   - [WIP](https://github.com/andypiper/ESP32-C3FH4-RGB) and PR sent upstream
+  - contribute to 01Space project via local fork as submodule to this project
   - try WLED and FastLED
    - initial rainbow test for FastLED had unusual behaviour, should recheck
 - try out TinyGo

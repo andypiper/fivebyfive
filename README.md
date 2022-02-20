@@ -17,18 +17,21 @@ Now, the goal of this project is to aggregate information, and different example
 
 ## Contents
 
-- `arduino/` updated version of the original Arduino code for the board (may need to populate via `git pull --recurse-submodules`)
-- [`micropython/`](./micropython) MicroPython code examples
-- [`tinygo/`](./tinygo) TinyGo code examples
+- `arduino/` updated version of the original Arduino code for the board (may need to populate via `git pull --recurse-submodules`). This pulls in my fork of the upstream original project so that I can send updates as needed.
+- [`micropython/`](./micropython) MicroPython code examples.
+- [`tinygo/`](./tinygo) TinyGo code examples.
 
 Each language subdirectory contains more information specific to build and usage of the code.
 
 - [`images/`](./images) various images to illustrate functionality and the board itself
-- [`reference/`](./reference) annotated images and schematics. The included schematic diagram has been kindly supplied by Jiale Xu of 01Space.
+- [`reference/`](./reference) annotated images and schematics. The included schematic diagram has been kindly supplied by Jiale Xu of 01Space (this is also available in the original Arduino project)
 
 ### More information
 
-- various learnings in the [notes](notes.md) (will be organised into a GH wiki soon)
+- various learnings in the [notes](notes.md)
+  - good source of information on what works / is broken
+  - many todos and ideas listed, contributions welcomed!
+  - will be organised into a GH wiki soon...
 - [YouTube playlist](https://www.youtube.com/watch?v=SQO4Dn0vE3k&list=PLBlxSZoETPB-GN-FPKTdkK5IxIUz5LEIO) showing some of these samples
 
 ### Images
@@ -47,4 +50,6 @@ MIT License Copyright (c) 2022 Andy Piper; some code samples may carry alternati
 
 ## Contributing
 
-See [Contributing](./CONTRIBUTING.md), and follow the [Code of Conduct](.github/CODE_OF_CONDUCT.md). Thanks!
+If you'd like to get involved or ask questions, please use the [Discussions](https://github.com/andypiper/fivebyfive/discussions).
+
+For code and documentation, see [Contributing](./CONTRIBUTING.md), and follow the [Code of Conduct](.github/CODE_OF_CONDUCT.md). Thanks!
