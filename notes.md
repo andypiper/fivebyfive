@@ -254,10 +254,12 @@ we are working on a BLE workflow for the C3. It's very early for C3 support now.
 - create a case (3D print or acrylic cut)
 - Arduino samples (e.g. for Wifi)
   - possibly clean up existing maker's project
-  - [WIP](https://github.com/andypiper/ESP32-C3FH4-RGB)
+   - [WIP](https://github.com/andypiper/ESP32-C3FH4-RGB) and PR sent upstream
   - try WLED and FastLED
+   - initial rainbow test for FastLED had unusual behaviour, should recheck
 - try out TinyGo
   - initial test working, thanks to help from @codepope
+  - added install notes in subfolder
 - try out Rust
 - can NodeMCU run on this? Do not think ESP32-C3 [fully works](https:/github.com/nodemcu/nodemcu-firmware/pull/3493) there yet (but boardsexist, so 🤷)
 - [uLisp on ESP32](https://eightytwo.net/blog/running-ulisp-on-an-esp32#downloading-ulisp)
