@@ -13,7 +13,7 @@ Now, the goal of this project is to aggregate information, and different example
 ## Requirements
 
 - the board, available to purchase [via Banggood](https://banggood.com/ESP32-C3-Development-Board-RISC-V-WiFi-Bluetooth-IoT-Development-Board-Compatible-with-Python-p-1914005.html)
-  - a USB-A to USB-C data cable
+  - a USB-A to USB-C data cable *will not work with USB-C to USB-C*
 
 ## Contents
 
