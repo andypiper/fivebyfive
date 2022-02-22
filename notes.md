@@ -76,8 +76,6 @@ USB JTAG/serial debug unit:
 
 Noting that this is not in the [Espressif allocated list of PIDs](https://github.com/espressif/usb-pids/blob/main/allocated-pids.txt)
 
-**important** USB-C to USB-C cables do not appear to deliver power to the board. USB-A to USB-C data cables do work (noted by a reviewer on BangGood, confirmed here). Maybe using [this component](https://hackaday.com/2022/02/20/the-usb-c-connectors-you-never-knew-you-wanted-to-avoid/)? (unconfirmed)
-
 ### Pins
 
 - 0/1 I2C SDA/SCL
