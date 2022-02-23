@@ -154,6 +154,12 @@ Also confirmed working in Arduino IDE 1.8.x with the ESP32 dev builds.
 
 We need to use the dev builds from Espressif in order to get the ESP32-C3 support.
 
+Demos:
+
+- 5x5 1-digit clock by @didn0t
+  - [code](https://github.com/didn0t/5x5_Clock)
+  - [video](https://www.youtube.com/watch?v=eF4v-Na2XIM)
+
 ### MicroPython
 
 Flash a MicroPython build to the board:
@@ -166,18 +172,20 @@ esptool.py --chip esp32c3 --port /dev/tty.usbmodem523201 --baud 460800 write_fla
 - [NeoPixel RMT issue](https://github.com/micropython/micropython/issues/8109)
   - Now works fully with bitstream channel manually set to 0 (as from the `v1.18-68-g1f04a9a1f` MicroPython nightly).
 
-Yet to test the GPIO pins.
+Yet to fully test/explore the GPIO pins.
 
 #### MicroPython resources
 
 - [Forums](https://forum.micropython.org/)
 - [Slack](https://slack-micropython.herokuapp.com/)
+- Wiki is offline
+- Discord
 
 ### CircuitPython
 
-_currently not supported_
+This board is _currently not supported_
 
-Look into this - [potentially similar board](https://circuitpython.org/board/ai_thinker_esp32-c3s/)
+Will look into this - [potentially similar board](https://circuitpython.org/board/ai_thinker_esp32-c3s/)
 
 NB the CP docs list a C3 DevKit for module compat, but no download - ask on Adafruit Discord...
 
@@ -193,11 +201,11 @@ works, basic notes in the TinyGo folder
 
 ### Rust
 
-_untested_
+this is _untested_
 
 ### uLisp
 
-_untested_
+this is _untested_
 
 ## Videos
 
@@ -223,7 +231,7 @@ _untested_
 
 ## Ideas / TODO
 
-### MicroPython
+### MicroPython ideas
 
 - build out more tests and effects for the basic code
   - Bluetooth, Wifi, button
@@ -261,13 +269,13 @@ _untested_
 ### Non-MicroPython
 
 - learn about the power draw
-  - [from @matt_trentini](https://twitter.com/matt_trentini/status/1490475943059542019): "Take care about how many and how brightly you drive those Neopixels. Last I checked they can consume up to 60mA *each* and 20mA is common. Given the micro can consume a couple of hundred mA you can easily exceed your power limit (presumably max 500mA)."
+  - [from @matt_trentini](https://twitter.com/matt_trentini/status/1490475943059542019): "Take care about how many and how brightly you drive those Neopixels. Last I checked they can consume up to 60mA _each_ and 20mA is common. Given the micro can consume a couple of hundred mA you can easily exceed your power limit (presumably max 500mA)."
   - try out various brightness options, per pixel analysis, etc.
 - create a case (3D print or acrylic cut)
 - Arduino samples (e.g. for Wifi)
   - contribute to 01Space project via local fork as submodule to this project
   - try WLED and FastLED
-   - initial rainbow test for FastLED had unusual behaviour, should recheck
+    - initial rainbow test for FastLED had unusual behaviour, should recheck
 - try out TinyGo
   - initial test working, thanks to help from @codepope
   - added install notes in subfolder
