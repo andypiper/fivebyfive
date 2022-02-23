@@ -76,6 +76,8 @@ USB JTAG/serial debug unit:
 
 Noting that this is not in the [Espressif allocated list of PIDs](https://github.com/espressif/usb-pids/blob/main/allocated-pids.txt)
 
+Requires a USB-A to USB-C data cable; C-to-C will not work.
+
 ### Pins
 
 - 0/1 I2C SDA/SCL
@@ -122,7 +124,7 @@ These are the Qwiic/Stemma QT boards I have on hand / identified with the code.
 ### Board manufacturer info
 
 - [Arduino sketch](https://github.com/01Space/ESP32-C3FH4-RGB)
-  - code has NeoPixel on pin 8, 800 KHz with GRBW (but the LEDs are actually GRB with no separate white channel)
+  - original code had NeoPixel on pin 8, 800 KHz with GRBW (but the LEDs are actually GRB with no separate white channel). Updated code moved to GRB.
 
 - [Video](https://www.youtube.com/watch?v=m-cgaS6eHv4)
 
