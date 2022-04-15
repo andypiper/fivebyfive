@@ -28,3 +28,5 @@ $ tinygo flash -target esp32c3
 looks like no wifi support yet https://github.com/tinygo-org/tinygo/pull/2138
 
 lots of doc issues for tinygo
+
+Basicblinky source available at https://github.com/codepope/basicblinky
