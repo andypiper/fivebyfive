@@ -227,9 +227,12 @@ this is _untested_
 - [Tweet](https://twitter.com/GeekMomProjects/status/1483695065629224960)
 - [Tweet](https://twitter.com/GeekMomProjects/status/1489168933709967366)
 - [Tweet](https://twitter.com/GeekMomProjects/status/1490163560688672768)
-- [Tweet](https://twitter.com/ciro/status/1488259161066459142)
+- [Tweet](https://twitter.com/ciro/status/1488259161066459142) - Wordle device
 - [Tweet](https://twitter.com/tablatronix/status/1488629644823871495)
-- [Tweet](https://twitter.com/andypiper/status/1493237488667795456)
+- [Tweet](https://twitter.com/andypiper/status/1493237488667795456) - Valentine 💖
+- [Tweet](https://twitter.com/andypiper/status/1494073527707869189) - using a USB power tester with [rd-usb](https://github.com/kolinger/rd-usb) (need to document this)
+- [Tweet](https://twitter.com/ErinTheSmall/status/1507783797340872712) - a USB power hack!
+- [Tweet](https://twitter.com/biglesp/status/1514897693558124544) - @biglesp thread
 
 ## Ideas / TODO
 
