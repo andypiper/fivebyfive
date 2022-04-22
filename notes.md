@@ -279,7 +279,7 @@ this is _untested_
 - create a case (3D print or acrylic cut)
 - Arduino samples (e.g. for Wifi)
   - contribute to 01Space project via local fork as submodule to this project
-  - try WLED and FastLED
+  - try [WLED](https://github.com/01Space/ESP32-C3FH4-RGB/issues/8) and FastLED
     - initial rainbow test for FastLED had unusual behaviour, should recheck
 - try out TinyGo
   - initial test working, thanks to help from @codepope
