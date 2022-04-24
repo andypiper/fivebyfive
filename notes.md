@@ -171,25 +171,23 @@ esptool.py --chip esp32c3 --port /dev/tty.usbmodem523201 erase_flash
 esptool.py --chip esp32c3 --port /dev/tty.usbmodem523201 --baud 460800 write_flash -z 0x0 esp32c3-usb-20220209-unstable-v1.18-121-gd8a7bf83c.bin
 ```
 
-- [NeoPixel RMT issue](https://github.com/micropython/micropython/issues/8109)
-  - Now works fully with bitstream channel manually set to 0 (as from the `v1.18-68-g1f04a9a1f` MicroPython nightly).
-
-Yet to fully test/explore the GPIO pins.
+~~- [NeoPixel RMT issue](https://github.com/micropython/micropython/issues/8109)~~
+  - ~~Now works fully with bitstream channel manually set to 0 (as from the `v1.18-68-g1f04a9a1f` MicroPython nightly).~~
 
 #### MicroPython resources
 
 - [Forums](https://forum.micropython.org/)
 - [Slack](https://slack-micropython.herokuapp.com/)
-- Wiki is offline
-- Discord
+- [Wiki](https://wiki.micropython.org/wiki/Main_Page)
+- [Discord](https://discord.gg/qw7d8bv)
 
 ### CircuitPython
 
 This board is _currently not supported_
 
-Will look into this - [potentially similar board](https://circuitpython.org/board/ai_thinker_esp32-c3s/)
+TODO look into this - [potentially similar board](https://circuitpython.org/board/ai_thinker_esp32-c3s/)
 
-NB the CP docs list a C3 DevKit for module compat, but no download - ask on Adafruit Discord...
+NB the CP docs list a C3 DevKit for module compat, but no download - asked on Adafruit Discord...
 
 From Discord conversation:
 
@@ -199,7 +197,9 @@ From Discord conversation:
 
 ### TinyGo
 
-works, basic notes in the TinyGo folder
+works, basic [notes](tinygo/README.md) in the TinyGo folder. No wifi currently.
+
+- [Sample from DJ Walker-Morgan](https://github.com/codepope/basicblinky)
 
 ### Rust
 
@@ -209,7 +209,7 @@ this is _untested_
 
 this is _untested_
 
-## Videos
+## Media
 
 ### YouTube
 
@@ -220,6 +220,11 @@ this is _untested_
 - [Windows driver installation (Chinese)](https://www.youtube.com/watch?v=QsQvsG6elDM)
 - [ESP32 C3 RGB LED blinker](https://www.youtube.com/watch?v=6XdavE2z5hk)
 - [ESP32 C3 RISC-V Wi-Fi Bluetooth](https://www.youtube.com/watch?v=WwOiEF_vm8g)
+- [Hacking around with the ESP32-C3FH4-RGB RISC-V Board](https://youtu.be/Sv0gOKzBezk)
+
+### Blog posts and reviews
+
+- [Friday Fun: Micro Weather Station](https://bigl.es/friday-fun-micro-weather-station/) - a really great in-depth post about using web APIs and driving the LEDs, uses a lot of information from this repo.
 
 ### Twitter
 

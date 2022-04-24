@@ -13,7 +13,6 @@
 # upip.install('micropython-umqtt.robust')
 # upip.install('micropython-umqtt.simple')
 
-import esp32
 import machine
 import network
 from umqtt.robust import MQTTClient
@@ -25,7 +24,6 @@ my_ssid = "network_name"
 my_pass = "pass_word"
 cl_broker = "mqtt.cheerlights.com"
 
-esp32.RMT.bitstream_channel(0)  # board needs this for NeoPixels to work
 neopin = Pin(8, Pin.OUT)  # NeoPixel control on Pin 8
 pixels = 25  # we have 25 pixels, set as a constant here for loops
 np = NeoPixel(neopin, pixels)

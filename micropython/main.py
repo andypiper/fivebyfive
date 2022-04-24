@@ -4,7 +4,6 @@
 # this is a deliberately simple script to test the various board functions
 # should not require any additional Python modules outside of core MicroPython
 
-import esp32
 from machine import Pin
 from neopixel import NeoPixel
 import random
@@ -12,9 +11,6 @@ import time
 
 
 # setup the NeoPixels
-
-# esp32.RMT.bitstream_channel(None)  # does *not* work with this board
-esp32.RMT.bitstream_channel(0)  # board needs this for NeoPixels to work
 
 neopin = Pin(8, Pin.OUT)  # NeoPixel control on Pin 8
 pixels = 25  # we have 25 pixels, set as a constant here for loops
