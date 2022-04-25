@@ -18,7 +18,7 @@ This repo started as a set of MicroPython experiments. The goal of this project 
 ## Contents
 
 - `arduino/` updated version of the original Arduino code for the board (may need to populate via `git pull --recurse-submodules`). This pulls in my fork of the upstream original project so that I can send updates as needed.
-- [`micropython/`](./micropython) MicroPython code examples.
+- [`micropython/`](./micropython) MicroPython code examples, and board definition for building your own MicroPython firmware.
 - [`tinygo/`](./tinygo) TinyGo code examples.
 
 Each language subdirectory contains more information specific to build and usage of the code.
