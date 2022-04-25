@@ -1,0 +1,21 @@
+{
+    "deploy": [
+        "../deploy_c3.md"
+    ],
+    "docs": "",
+    "features": [
+        "BLE",
+        "RGB LED",
+        "STEMMA QT/QWIIC",
+        "USB-C",
+        "WiFi"
+    ],
+    "images": [
+        ""
+    ],
+    "mcu": "esp32c3",
+    "product": "ESP32-C3FH4-RGB (aka Bedazzled)",
+    "thumbnail": "",
+    "url": "",
+    "vendor": "01Space"
+}
