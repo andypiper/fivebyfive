@@ -161,6 +161,8 @@ Demos:
 - 5x5 1-digit clock by @didn0t
   - [code](https://github.com/didn0t/5x5_Clock)
   - [video](https://www.youtube.com/watch?v=eF4v-Na2XIM)
+- Cheerlights etc by @dougielawson
+  - [code](https://github.com/DougieLawson/ESP32FivexFive)
 
 ### MicroPython
 
