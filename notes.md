@@ -240,6 +240,7 @@ this is _untested_
 - [Tweet](https://twitter.com/andypiper/status/1494073527707869189) - using a USB power tester with [rd-usb](https://github.com/kolinger/rd-usb) (need to document this)
 - [Tweet](https://twitter.com/ErinTheSmall/status/1507783797340872712) - a USB power hack!
 - [Tweet](https://twitter.com/biglesp/status/1514897693558124544) - @biglesp thread
+- [Tweet](https://twitter.com/biglesp/status/1541897551879831554) - @biglesp Air raid status alerter
 
 ## Ideas / TODO
 
