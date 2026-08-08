@@ -176,6 +176,10 @@ esptool.py --chip esp32c3 --port /dev/tty.usbmodem523201 --baud 460800 write_fla
 ~~- [NeoPixel RMT issue](https://github.com/micropython/micropython/issues/8109)~~
   - ~~Now works fully with bitstream channel manually set to 0 (as from the `v1.18-68-g1f04a9a1f` MicroPython nightly).~~
 
+#### WiFi
+
+- See [MicroPython discussion #13414](https://github.com/orgs/micropython/discussions/13414#discussioncomment-8126226) for additional WiFi configuration and connectivity notes.
+
 #### MicroPython resources
 
 - [Forums](https://forum.micropython.org/)
